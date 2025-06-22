@@ -1,0 +1,486 @@
+<html>
+ <head>
+  <title>Notes of Database Management System</title>
+  <style>
+  
+   body{
+   background-color:black;
+   }
+   
+   h1{
+   padding:10;
+   color:white;
+   }
+   hw{
+   padding:10;
+   }
+   
+   div{
+   padding:10;
+   background-color:#CAC4C3;
+   background-color:#CAC4C3 ;
+   }
+   details{
+   padding:10;
+   background-color:#CAC4C3;
+   background-color:#CAC4C3 ;
+   }
+   
+   hr
+   {
+   border: none;
+   height:1px;
+   background-color:white;
+   }
+   
+   table{
+   margin-left: 0;
+   padding-left:0px;
+   }
+   
+   td{
+   padding-right:10;
+   padding-left:10;
+   }
+   summary{
+   font-weight:bold;
+   font-size:22;
+   text-decoration:underline;
+   }
+   </style>
+  </head>
+  <body>
+   <h1>DataBase Management System</h1>
+   <p style="color:white;">Go back to:
+   <button style="background-color: grey;"> <a href="index.html" style="color:white;">Table of Content</a></button> </p>
+   <hr>
+   
+   
+<details>
+  <summary>Data and Data Types</summary>
+  <h2>Data and Data Types</h2>
+  <p>Data refers to raw, unorganized facts and figures that are processed and interpreted to become meaningful information.</p>
+
+  <h3>Numeric</h3>
+  <p>Used for storing numerical values, such as integers (e.g., INT, BIGINT) and floating-point numbers (e.g., FLOAT, DECIMAL).</p>
+
+  <h3>Character/String</h3>
+  <p>Used for storing text-based data, including fixed-length strings (e.g., CHAR) and variable-length strings (e.g., VARCHAR).</p>
+
+  <h3>Date and Time</h3>
+  <p>Used for storing date and time information (e.g., DATE, TIME, DATETIME).</p>
+
+  <h3>Boolean</h3>
+  <p>Represents logical values, either TRUE or FALSE.</p>
+
+  <h3>Binary</h3>
+  <p>Used for storing sequences of bytes (e.g., BINARY, VARBINARY).</p>
+
+  <h3>Large Objects (LOBs)</h3>
+  <p>Used for storing large amounts of data, such as images, audio, or video (e.g., BLOB, CLOB).</p>
+</details>
+
+   
+   <hr>
+   <details>
+   <summary>Databases and it's Types</summary>
+   <h2>DataBases</h2>
+   <p>A database is a structured collection of data that is stored and accessed electronically. It is designed to efficiently store, manage, retrieve, and update data. Databases are used in a wide range of applications, from banking systems to websites, to keep information organized and easily accessible</p>
+   <h3>Relational Database</h3>
+   <p>A relational database is a type of database which stores data in the form of tables called relations.Each table consists of rows called records and columns called attributes. In this, keys are used to to establish and enforce relationships between tables thus data integrity is maintained and redundancy is reduced. </p>
+   <h3>Hierarchial Database</h3>
+   <p>A hierarchical database is a type of database management system (DBMS) that organizes data in a tree-like structure. This structure is based on parent-child relationships, much like an organizational chart or a file system on your computer.</p>
+   <h3>Network model Database</h3>
+   <p>The Network Model evolved from the hierarchical model, primarily to overcome its inability to directly represent complex many-to-many relationships. Instead of a strict tree structure, the network model uses a more generalized graph structure, allowing records (or nodes) to have multiple "parent" and multiple "child" records. Data is organized into records and sets, where a set defines a relationship between an "owner" record type and one or more "member" record types</p>
+   <h3>Object-Oriented Database</h3>
+   <p>The Object-Oriented Database (OODB), also known as an Object Database Management System (OODBMS), takes a different approach by storing data as objects, directly mirroring concepts from object-oriented programming (OOP) languages. In an OODB, data is organized into objects that are instances of classes, which define both the object's attributes (data) and its methods (behavior).</p>
+   </details>
+   
+   <hr>
+
+   <details>
+   <summary>Domain Specific Softwares(Tailored Software)</summary>
+   <h2>Domain Specific Softwares</h2>
+   <p>Domain-specific software refers to computer programs or applications that are specially designed to perform tasks, solve problems, or provide services within a specific field or industry. Unlike general-purpose software, domain-specific software is tailored to the unique requirements, workflows, and regulations of a particular sector.</p>
+   <h3>DataBase Management System</h3>
+   <p>A Database Management System (DBMS) is software used to create, manage, and manipulate databases. It helps users store, retrieve, and update data efficiently and securely. Instead of manually storing data in files, DBMS organizes data into structured tables and manages relationships between them.</p>
+   <h3>Accounting System</h3>
+   <p>An Accounting System is software that helps businesses track financial transactions such as sales, purchases, income, and expenses. It automates accounting tasks, ensures accurate financial reporting, and helps with budget planning.</p>
+   <h3>Attendance System</h3>
+   <p>An Attendance System is a software application that helps record and manage the presence, absence, and working hours of students or employees. It may use methods like manual input, biometric devices, RFID, or online check-in.</p>
+   </details>
+   
+   <hr>
+  <details>
+  <summary>Database Software Development</summary>
+   <h2>Database Software Development</h2>
+   <p>Database software development encompasses the entire process of designing, building, testing, and maintaining database systems and the applications that interact with them. It's a critical aspect of nearly all modern software, from small mobile apps to large enterprise systems, as databases are the backbone for storing, organizing, and retrieving information.</p>
+   <h3>Database Design</h3>
+   <p>Database design and database administration are two distinct but highly interconnected roles crucial for the effective functioning of any data-driven organization. Think of it like building and maintaining a sophisticated house: the database designer is the architect, drawing up the blueprints and ensuring the structure is sound and functional, while the database administrator (DBA) is the property manager, ensuring the house remains habitable, secure, and performs optimally over time.<br>
+
+     Database Design focuses on the planning and structuring of the database itself. This involves understanding the information needs of an organization and translating those requirements into a logical and physical data model. Key responsibilities of a database designer include:</p><br>
+
+     <table border="1" cellspacing="0">
+      <tr>
+       <th>Design Phase</th>
+       <th>Description</th>
+      </tr>
+      <tr>
+       <td>Requirements Gathering</td>
+       <td>Collaborating with stakeholders and users to understand what data needs to be stored, how it will be used, and the relationships between different pieces of information.</td>
+      </tr>
+      <tr>
+       <td>Conceptual Modeling (e.g., ER Diagrams)</td>
+       <td>Creating high-level, abstract representations of data, identifying entities, attributes, and relationships. This is often technology-agnostic.</td>
+      </tr>
+      <tr>
+       <td>Logical Design</td>
+       <td>Translating the conceptual model into a specific database model (e.g., relational, NoSQL), defining tables, columns, primary keys, foreign keys, and applying normalization to reduce redundancy and improve data integrity.</td>
+      </tr>
+      <tr>
+       <td>Physical Design</td>
+       <td>Deciding on implementation-specific details such as data types, indexing strategies, partitioning, and storage structures, considering the chosen DBMS and performance requirements.</td>
+      </tr>
+      <tr>
+       <td>Schema Definition</td>
+       <td>Writing Data Definition Language (DDL) scripts to create the actual database schema (tables, views, stored procedures, etc.).</td>
+      </tr>
+      <tr>
+       <td>Documentation</td>
+       <td>Creating comprehensive documentation of the database schema, data dictionary, and design decisions.</td>
+      </tr>
+     </table>
+
+   <h3>Database Administration</h3>
+   <p>Database Administration (DBA) is concerned with the ongoing management, maintenance, performance, security, and availability of the database system once it has been designed and implemented. DBAs are the guardians of the data, ensuring it remains accessible, secure, and performs optimally. Their key responsibilities typically include:</p><br>
+
+	<table border="1" cellspacing="0">
+  <tr>
+    <th>Responsibility</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Installation and Configuration</td>
+    <td>Installing, upgrading, and configuring database software (DBMS) on servers.</td>
+  </tr>
+  <tr>
+    <td>Performance Monitoring and Tuning</td>
+    <td>Continuously monitoring database performance, identifying bottlenecks, and optimizing queries, indexes, and server configurations to ensure fast and efficient data access.</td>
+  </tr>
+  <tr>
+    <td>Backup and Recovery</td>
+    <td>Implementing and managing robust backup strategies, conducting regular backups, and being prepared to recover data in case of failures, disasters, or data corruption. This is a critical responsibility.</td>
+  </tr>
+  <tr>
+    <td>Security Management</td>
+    <td>Implementing and enforcing security policies, managing user accounts, roles, and permissions, and protecting sensitive data from unauthorized access, breaches, and cyber threats.</td>
+  </tr>
+  <tr>
+    <td>Troubleshooting and Problem Resolution</td>
+    <td>Diagnosing and resolving database-related issues, such as connectivity problems, slow queries, or data inconsistencies.</td>
+  </tr>
+  <tr>
+    <td>Capacity Planning</td>
+    <td>Monitoring disk space usage, predicting future storage needs, and planning for hardware and software upgrades to accommodate growth.</td>
+  </tr>
+  <tr>
+    <td>High Availability and Disaster Recovery</td>
+    <td>Implementing solutions like replication, clustering, and failover mechanisms to ensure continuous database availability and minimize downtime.</td>
+  </tr>
+  <tr>
+    <td>Automation</td>
+    <td>Developing scripts and tools to automate routine administrative tasks, such as backups, monitoring, and patch management.</td>
+  </tr>
+</table>
+
+   
+  </details>
+   
+   <hr>
+   <details>
+   <summary>Tools in Database Managenent System</summary>
+   <h2>Tools</h2>
+   <h3>Server</h3>
+   <p>A server is a powerful computer or software that provides services or resources to other computers (clients) over a network. It can host websites, manage files, run applications, or store databases. Common types include web servers, database servers, and file servers.</p>
+   <h4>Xampp</h4>
+   <p> XAMPP is a free and open-source software package that provides a local server environment for web development. It includes X (cross-platform), Apache (web server), MySQL (database), PHP, and Perl. Developers use XAMPP to test websites or applications on their own computer(i.e. locally) before deploying them online.</p>
+   <h4>Structured Query Language(SQL)</h4>
+   <p>SQL stands for Structured Query Language and is the standard programming language used to manage and manipulate relational databases. It allows users to perform various operations on the data stored in databases, such as retrieving, inserting, updating, and deleting records.</p>
+   <table border="1" cellspacing="0">
+    <tr>
+     <th>Parts of SQL</th>
+     <th>Description</th>
+    </tr>
+    <tr>
+     <td>Data Definition Language (DDL)</td>
+     <td>Defines and modifies the structure of database objects like tables.</td>
+    </tr>
+    <tr>
+     <td>Data Manipulation Language (DML)</td>
+     <td>Inserts, updates, deletes, and manipulates data within tables.</td>
+    </tr>
+    <tr>
+     <td>Data Query Language (DQL)</td>
+     <td>Retrieves data from database tables.</td>
+    </tr>
+    <tr>
+     <td>Data Control Language (DCL)</td>
+     <td>Controls access and permissions on the database.</td>
+    </tr>
+    <tr>
+     <td>SQL Joins</td>
+     <td>Combine rows from two or more tables based on related columns.</td>
+    </tr>
+   </table>
+   </details>
+   
+   <hr>
+   <details>
+   <summary>CRUD Operations</summary>
+   <h2>CRUD Operations</h2>
+   <p>CRUD operations refer to the four basic functions used to interact with data in a database. They stand for:<br><br>
+
+    <b>Create</b> — Adding new data (usually done with INSERT in SQL)<br>
+
+    <b>Read</b> — Retrieving or viewing data (done with SELECT)<br>
+
+    <b>Update</b> — Modifying existing data (done with UPDATE)<br>
+
+    <b>Delete</b> — Removing data (done with DELETE)<br><br>
+
+    CRUD forms the foundation of most database applications and aligns closely with SQL commands for data manipulation.</p>
+   </details>
+   
+   <hr>
+   <details>
+   <summary>Keys in Database</summary>
+   <h2>Keys in Database</h2>
+   <p>Keys are special fields (or combinations of fields) in a database table that help identify, access, and maintain relationships between data records.<br></p>
+    
+  <p><strong>Primary Key:</strong><br>
+A primary key is a field (or a combination of fields) that uniquely identifies each record in a table. It cannot have duplicate or NULL values.<br><br>
+<b>Example:</b> In a Student table:<br>
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr><th>StudentID</th><th>Name</th><th>Class</th></tr>
+  <tr><td>1</td><td>Ram</td><td>12</td></tr>
+  <tr><td>2</td><td>Sita</td><td>11</td></tr>
+</table>
+Here, <code>StudentID</code> is the primary key because it uniquely identifies each student.</p>
+
+<p class="answer"><strong>Foreign Key:</strong><br>
+A foreign key is a field in one table that refers to the primary key of another table. It is used to establish a relationship between two tables.<br><br>
+<b>Example:</b> In a Marks table:<br>
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr><th>StudentID</th><th>Subject</th><th>Marks</th></tr>
+  <tr><td>1</td><td>Math</td><td>85</td></tr>
+  <tr><td>2</td><td>English</td><td>90</td></tr>
+</table>
+Here, <code>StudentID</code> is a foreign key because it refers to <code>StudentID</code> in the Student table.</p>
+
+<p class="answer"><strong>Candidate Key:</strong><br>
+A candidate key is any field or combination of fields that can uniquely identify a record in a table. A table can have multiple candidate keys, but only one is selected as the primary key.<br><br>
+<b>Example:</b> In a Student table:<br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>Email</th><th>Phone</th></tr>
+  <tr><td>1</td><td>ram@gmail.com</td><td>9800000001</td></tr>
+  <tr><td>2</td><td>sita@gmail.com</td><td>9800000002</td></tr>
+</table>
+Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all candidate keys because each can uniquely identify a student. One of them (e.g., <code>StudentID</code>) is chosen as the primary key.</p>
+
+   </details>
+   
+   <hr>
+   <details>
+   <summary>Constraints in Database</summary>
+   <h2>Constraints in Database</h2>
+   <p>Constraints are rules applied to database columns to enforce data integrity, accuracy, and consistency by restricting the type of data that can be stored.</p>
+   <table border="1" cellspacing="0">
+  <tr>
+    <th>Constraint</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Primary Key Constraint</td>
+    <td>Ensures each row has a unique, non-null identifier.</td>
+  </tr>
+  <tr>
+    <td>Foreign Key Constraint</td>
+    <td>Ensures referential integrity between tables by linking columns to a primary key in another table.</td>
+  </tr>
+  <tr>
+    <td>Unique Constraint</td>
+    <td>Guarantees all values in a column are unique (no duplicates).</td>
+  </tr>
+  <tr>
+    <td>Not Null Constraint</td>
+    <td>Prevents null values in a column; the column must always have data.</td>
+  </tr>
+  <tr>
+    <td>Check Constraint</td>
+    <td>Ensures that values in a column satisfy a specific condition (e.g., age &gt; 18).</td>
+  </tr>
+  <tr>
+    <td>Default Constraint</td>
+    <td>Provides a default value for a column when no value is specified.</td>
+  </tr>
+</table>
+
+   </details>
+   
+   <hr>
+   <details>
+   <summary>Anomalies in a Database</summary>
+   <h2>Anomalies in Database</h2>
+   <p>Anomalies are problems or inconsistencies that occur in a database when inserting, updating, or deleting data due to poor database design or lack of normalization.</p>
+   <table border="1" cellspacing="0">
+  <tr>
+    <th>Anomaly</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Insertion Anomaly</td>
+    <td>Difficulty adding data because other data is missing or must be added together.</td>
+  </tr>
+  <tr>
+    <td>Update Anomaly</td>
+    <td>When changing data in one place requires multiple updates in different rows; failing to update all causes inconsistency.</td>
+  </tr>
+  <tr>
+    <td>Deletion Anomaly</td>
+    <td>Unintended loss of data when deleting a record, which may remove other valuable information.</td>
+  </tr>
+</table>
+
+   </details>
+   
+   <hr>
+     <details>
+	 <summary>Normalization in Database</summary>
+	 <h2>Normalization in Database</h2>
+      <p><strong>Normalization</strong> is the process of organizing data in a database to reduce redundancy (duplicate data) and ensure data integrity. It involves dividing large tables into smaller, related tables and linking them using keys. This makes data easier to maintain, reduces the chance of anomalies (like update or deletion issues), and improves database efficiency.</p>
+	  <p class="answer"><strong>First Normal Form (1NF):</strong><br>
+	  A table is in 1NF if:<br>
+	  – All values in each column are atomic (indivisible).<br>
+	  – Each record is unique.<br><br>
+	  <b>Example (Not in 1NF):</b><br>
+	  <table border="0" cellspacing="0">
+		<tr><th>StudentID</th><th>Name</th><th>Subject</th></tr>
+		<tr><td>1</td><td>Ram</td><td>Math,English</td></tr>
+		<tr><td>2</td><td>Sita</td><td>Science,Math</td></tr>
+		</table><br>
+		<b>Conversion to 1NF:</b><br>
+		<table border="0" cellspacing="0">
+		 <tr><th>StudentID</th><th>Name</th><th>Subject</th></tr>
+		 <tr><td>1</td><td>Ram</td><td>Math</td></tr>
+		 <tr><td>1</td><td>Ram</td><td>English</td></tr>
+		 <tr><td>2</td><td>Sita</td><td>Science</td></tr>
+		 <tr><td>2</td><td>Sita</td><td>Math</td></tr>
+		</table>
+	   </p>
+
+	   <p><strong>Second Normal Form (2NF):</strong><br>
+		A table is in 2NF if:<br>
+		– It is in 1NF.<br>
+		– All non-key attributes are fully functionally dependent on the primary key (no partial dependency).<br><br>
+		<b>Example (In 1NF not 2NF):</b><br>
+		<table border="0" cellspacing="0">
+		 <tr><th>StudentID</th><th>Subject</th><th>Teacher</th></tr>
+		 <tr><td>1</td><td>Math</td><td>Mr. Sharma</td></tr>
+		 <tr><td>1</td><td>English</td><td>Ms. Koirala</td></tr>
+		 <tr><td>2</td><td>Science</td><td>Mr. Lama</td></tr>
+		</table><br>
+		Here, TeacherName depends only on Subject, not the whole composite key (StudentID + Subject).<br><br>
+		<b>Conversion to 2NF:</b><br>
+		Main Table:<br>
+		<table border="0" cellspacing="0">
+		 <tr><th>StudentID</th><th>Subject</th></tr>
+		 <tr><td>1</td><td>Math</td></tr>
+		 <tr><td>1</td><td>English</td></tr>
+		 <tr><td>2</td><td>Science</td></tr>
+		</table>
+	<br>
+		Subject-Teacher Table:<br>
+		<table border="0" cellspacing="0">
+		 <tr><th>Subject</th><th>TeacherName</th></tr>
+		 <tr><td>Math</td><td>Mr. Sharma</td></tr>
+		 <tr><td>English</td><td>Ms. Koirala</td></tr>
+		 <tr><td>Science</td><td>Mr. Lama</td></tr>
+		</table></p>
+
+		<p><strong>Third Normal Form (3NF):</strong><br>
+		A table is in 3NF if:<br>
+		– It is in 2NF.<br>
+		– All attributes are only dependent on the primary key, and not on any other non-key attribute (no transitive dependency).<br><br>
+		<b>Example (Not in 3NF):</b><br>
+		<table border="0" cellspacing="0">
+		 <tr><th>StudentID</th><th>StudentName</th><th>Department</th><th>HOD</th></tr>
+		 <tr><td>1</td><td>Ram</td><td>Science</td><td>Dr. Sharma</td></tr>
+		 <tr><td>2</td><td>Sita</td><td>Arts</td><td>Dr. Joshi</td></tr>
+		</table>
+		<br>
+		Here, HOD depends on Department, not directly on StudentID.<br><br>
+		<b>Conversion to 3NF:</b><br>
+		Student Table:<br>
+		<table border="0" cellspacing="0">
+		 <tr><th>StudentID</th><th>StudentName</th><th>Department</th></tr>
+		 <tr><td>1</td><td>Ram</td><td>Science</td></tr>
+		 <tr><td>2</td><td>Sita</td><td>Arts</td></tr>
+		</table>
+		<br>
+		Department Table:<br>
+		<table border="0" cellspacing="0">
+		 <tr><th>Department</th><th>HOD</th></tr>
+		 <tr><td>Science</td><td>Dr. Sharma</td></tr>
+		 <tr><td>Arts</td><td>Dr. Joshi</td></tr>
+		</table></p>
+
+		<p><strong>Normalization Process Summary:</strong><br>
+		1. Remove repeating groups → 1NF<br>
+		2. Remove partial dependencies → 2NF<br>
+		3. Remove transitive dependencies → 3NF<br><br>
+		By following these steps, the database becomes more structured, efficient, and easier to maintain.</p>
+    </details>
+   
+   <hr>
+   <details>
+   <summary>Database Security</summary>
+   <h2>Database Security</h2>
+   <p>Database Security refers to the measures used to protect a database from unauthorized access, misuse, corruption, or theft. It ensures that only authorized users can access, modify, or manage the data while keeping it safe from threats.</p>
+   <table border="1" cellspacing="0">
+  <tr>
+    <th>Security Measure</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Authentication</td>
+    <td>Verifying the identity of users before granting access.</td>
+  </tr>
+  <tr>
+    <td>Authorization</td>
+    <td>Controlling what actions a user is allowed to perform (e.g., read, write, delete).</td>
+  </tr>
+  <tr>
+    <td>Encryption</td>
+    <td>Securing data by converting it into an unreadable format to prevent unauthorized access.</td>
+  </tr>
+  <tr>
+    <td>Backups</td>
+    <td>Keeping copies of data to restore in case of loss or damage.</td>
+  </tr>
+  <tr>
+    <td>Firewalls and Antivirus</td>
+    <td>Protecting the database server from external attacks or malware.</td>
+  </tr>
+  <tr>
+    <td>Access Control</td>
+    <td>Restricting database access based on user roles and permissions.</td>
+  </tr>
+</table>
+
+   
+   </details>
+   
+   <hr>
+   
+  </body>
+ </html>
